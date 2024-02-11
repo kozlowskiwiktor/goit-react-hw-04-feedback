@@ -1,14 +1,13 @@
-import { useState } from 'react';
-
-export default function Statistics() {
-  const [good, setGood] = useState(0);
-
-  const handleGood = () => {
-    setGood(prev => prev + 1);
-  };
+function Statistics({ good, neutral, bad, total, positivePercentage }) {
   return (
-    <div>
-      Good: {good} <button onClick={handleGood}>Good</button>
+    <div className="">
+      <p>Good: {good}</p>
+      <p>Neutral: {neutral}</p>
+      <p>Bad: {bad}</p>
+      <p>Total: {total}</p>
+      <p>Positive Feedback: {positivePercentage}</p>
     </div>
   );
 }
+
+export default Statistics;
