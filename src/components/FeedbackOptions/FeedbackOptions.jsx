@@ -1,4 +1,4 @@
-import propTypes from 'react';
+import PropTypes from 'prop-types';
 
 function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
@@ -22,8 +22,8 @@ function FeedbackOptions({ options, onLeaveFeedback }) {
 }
 
 FeedbackOptions.propTypes = {
-  options: propTypes.arrayOf(propTypes.string.isRequired).isRequired,
-  onLeaveFeedback: propTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
 
 export default FeedbackOptions;

@@ -1,11 +1,11 @@
-import propTypes from 'react';
+import PropTypes from 'prop-types';
 
 function Notification({ message }) {
   return <h3 className="">{message}</h3>;
 }
 
 Notification.propTypes = {
-  message: propTypes.string.isRequired,
+  message: PropTypes.string.isRequired,
 };
 
 export default Notification;
